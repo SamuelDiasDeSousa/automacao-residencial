@@ -355,28 +355,6 @@ void retorno(char* topico, byte* mensagem, unsigned int tamanho) {
     d[2] = 1;
     d[3] = 1;
   }
-
-  if(strMensagem == "piscar"){
-     
-    while (true) // Testando a condição
-    { 
-    digitalWrite(pino1, LOW);
-    digitalWrite(pino2, LOW);
-    digitalWrite(pino3, LOW);
-    digitalWrite(pino4, LOW);
-    delay(1000);
-    digitalWrite(pino1, HIGH);
-    digitalWrite(pino2, HIGH);
-    digitalWrite(pino3, HIGH);
-    digitalWrite(pino4, HIGH);
-    delay(1000);
-    Serial.println("testando!!!");
-
-    if(strMensagem != "piscar"){
-      break;
-    }
-    }
-  }
   
   piscar(0,0,0,d[0]);
   piscar(64,0,1,d[1]);
